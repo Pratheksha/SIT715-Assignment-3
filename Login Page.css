@@ -1,0 +1,17 @@
+/* CSS declarations go here */
+body { 
+  background: url(mood-camera.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.center {
+    position: absolute;
+    font-size: 132px;
+    color: white;
+    left: 0.5%;
+    top: 76%;
+    width: 100%;
+}

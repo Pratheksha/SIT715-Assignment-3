@@ -1,0 +1,45 @@
+<head>
+  <title>SIT715_Assignment3_Group1</title>
+</head>
+
+<body>
+ <div class="center">PhotoOP</div>
+
+ {{> loginButtons}}
+  
+    {{#if currentUser}}
+        {{> dashboard}}
+    {{else}}
+        {{> register}}
+        {{> login}}
+    {{/if}}
+
+</body>
+
+  <template name="register">
+  <div align="center" style="color:white">
+    <form >
+        Email:    <input type="email" name="registerEmail"><br><br>
+        Username: <input type="username" name="registerUsername"><br><br>
+        Password: <input type="password" name="registerPassword"><br><br>
+        <input type="submit" value="Register"><br><br>
+    </form>
+    </div>
+</template>
+
+<template name="login">
+<div align="right" style="color:white">
+    <form>
+        Email:    <input type="email" name="loginEmail"><br><br>
+        Password: <input type="password" name="loginPassword"><br><br>
+        <input type="submit" value="Login">
+    </form>
+ </div>
+</template>
+
+ <template name="dashboard">
+    <p>You're logged in.'</p>
+    <p><a href="#" class="logout">Logout</a></p>
+</template>
+
+
